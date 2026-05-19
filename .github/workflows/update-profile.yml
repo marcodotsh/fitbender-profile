@@ -35,7 +35,8 @@ jobs:
       - name: Check for changes
         id: diff
         run: |
-          if git diff --quiet profile.json; then
+          git add profile.json
+          if git diff --staged --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -46,6 +47,5 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add profile.json
           git commit -m "chore: update FIT profile.json"
           git push
