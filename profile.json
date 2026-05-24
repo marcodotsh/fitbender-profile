@@ -5636,17 +5636,29 @@
         "4776": {
           "name": "tactix8_solar"
         },
+        "4814": {
+          "name": "fr170_music"
+        },
+        "4815": {
+          "name": "fr170"
+        },
         "4825": {
           "name": "approach_j1"
         },
         "4879": {
           "name": "d2_mach2"
         },
+        "4916": {
+          "name": "fr70_2026"
+        },
         "4678": {
           "name": "instinct_crossover_amoled"
         },
         "4944": {
           "name": "d2_air_x15"
+        },
+        "5056": {
+          "name": "d2_mach2_pro"
         },
         "10007": {
           "name": "sdm4",
@@ -26633,7 +26645,7 @@
           "name": "value",
           "type": "uint16",
           "scale": "1000",
-          "units": "degC",
+          "units": "C",
           "array": "[N]",
           "comment": "Wrist temperature reading"
         }
