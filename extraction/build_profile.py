@@ -194,6 +194,8 @@ def merge_profiles(official: Dict, community: Dict) -> Dict:
     stats = {'new_types': 0, 'new_type_values': 0, 'new_messages': 0, 'new_fields': 0}
 
     for name, t in community.get('types', {}).items():
+        if name.endswith('?'):
+            continue
         if name not in types:
             types[name] = t
             stats['new_types'] += 1
@@ -201,16 +203,26 @@ def merge_profiles(official: Dict, community: Dict) -> Dict:
         else:
             existing = types[name].setdefault('values', {})
             for k, v in t.get('values', {}).items():
+                if v.get('name', '').endswith('?'):
+                    continue
                 if k not in existing:
                     existing[k] = v
                     stats['new_type_values'] += 1
 
     for msg_id, msg in community.get('messages', {}).items():
+        if msg.get('name', '').endswith('?'):
+            continue
         if msg_id not in messages:
+            for fid, fdef in list(msg.get('fields', {}).items()):
+                if fdef.get('name', '').endswith('?'):
+                    del msg['fields'][fid]
             messages[msg_id] = msg
             stats['new_messages'] += 1
+            stats['new_fields'] += len(msg.get('fields', {}))
         else:
             for fid, fdef in msg.get('fields', {}).items():
+                if fdef.get('name', '').endswith('?'):
+                    continue
                 if fid not in messages[msg_id].get('fields', {}):
                     messages[msg_id].setdefault('fields', {})[fid] = fdef
                     stats['new_fields'] += 1

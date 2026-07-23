@@ -634,10 +634,6 @@
           "name": "alarm_settings",
           "comment": "settings"
         },
-        "233": {
-          "name": "mesg_233?",
-          "comment": "activity"
-        },
         "243": {
           "name": "music_info",
           "comment": "activity"
@@ -645,10 +641,6 @@
         "273": {
           "name": "sleep_data_info",
           "comment": "sleep"
-        },
-        "288": {
-          "name": "mesg_288?",
-          "comment": "activity"
         },
         "309": {
           "name": "mtb_cx",
@@ -666,20 +658,8 @@
           "name": "power_mode",
           "comment": "sport"
         },
-        "324": {
-          "name": "mesg_324?",
-          "comment": "activity"
-        },
-        "325": {
-          "name": "mesg_325?",
-          "comment": "activity"
-        },
         "326": {
           "name": "gps_event",
-          "comment": "activity"
-        },
-        "327": {
-          "name": "mesg_327?",
           "comment": "activity"
         },
         "336": {
@@ -732,10 +712,6 @@
         },
         "428": {
           "name": "workout_schedule",
-          "comment": "activity"
-        },
-        "432": {
-          "name": "msg_432?",
           "comment": "activity"
         }
       }
@@ -19957,14 +19933,6 @@
           "name": "avg_swolf",
           "type": "uint16"
         },
-        "107": {
-          "name": "front_shifts?",
-          "type": "uint16"
-        },
-        "108": {
-          "name": "rear_shifts?",
-          "type": "uint16"
-        },
         "151": {
           "name": "total_sets",
           "type": "uint16"
@@ -23585,14 +23553,6 @@
           "type": "uint16",
           "units": "kcal"
         },
-        "80": {
-          "name": "field_80?",
-          "type": "uint8"
-        },
-        "81": {
-          "name": "field_81?",
-          "type": "uint8"
-        },
         "93": {
           "name": "grade_adjusted_speed",
           "type": "uint32",
@@ -23797,10 +23757,6 @@
           "scale": 10.0,
           "units": "ms"
         },
-        "23": {
-          "name": "field_23?",
-          "type": "uint16"
-        },
         "24": {
           "name": "avg_step_length",
           "type": "uint16",
@@ -23843,22 +23799,6 @@
           "name": "resting_calories",
           "type": "uint16",
           "units": "kcal"
-        },
-        "67": {
-          "name": "field_67?",
-          "type": "uint8"
-        },
-        "68": {
-          "name": "field_68?",
-          "type": "uint8"
-        },
-        "69": {
-          "name": "field_69?",
-          "type": "uint8"
-        },
-        "71": {
-          "name": "field_71?",
-          "type": "uint32"
         },
         "72": {
           "name": "avg_hrv",
@@ -28196,28 +28136,6 @@
           "units": "ml/kg/min",
           "comment": "vo2 max of first activity if close together, Invalid if 0"
         },
-        "35": {
-          "name": "time?",
-          "type": "uint32",
-          "scale": 1000.0,
-          "units": "s"
-        },
-        "36": {
-          "name": "distance?",
-          "type": "uint32",
-          "scale": 100.0,
-          "units": "m"
-        },
-        "37": {
-          "name": "training_load_peak_1?",
-          "type": "sint32",
-          "scale": 65536.0
-        },
-        "39": {
-          "name": "training_load_peak_2?",
-          "type": "sint32",
-          "scale": 65536.0
-        },
         "41": {
           "name": "primary_benefit",
           "type": "benefit"
@@ -29091,103 +29009,6 @@
         }
       }
     },
-    "233": {
-      "name": "mesg_233?",
-      "fields": {
-        "2": {
-          "name": "values?",
-          "type": "byte"
-        }
-      }
-    },
-    "288": {
-      "name": "mesg_288?",
-      "fields": {
-        "0": {
-          "name": "number?",
-          "type": "sint8"
-        },
-        "1": {
-          "name": "value?",
-          "type": "sint8"
-        }
-      }
-    },
-    "324": {
-      "name": "mesg_324?",
-      "fields": {
-        "1": {
-          "name": "value?",
-          "type": "uint8"
-        },
-        "2": {
-          "name": "list?",
-          "type": "byte"
-        }
-      }
-    },
-    "325": {
-      "name": "mesg_325?",
-      "fields": {
-        "0": {
-          "name": "field_0?",
-          "type": "uint8"
-        },
-        "1": {
-          "name": "field_1?",
-          "type": "uint8"
-        },
-        "2": {
-          "name": "field_2?",
-          "type": "uint8"
-        },
-        "3": {
-          "name": "field_3?",
-          "type": "uint8"
-        },
-        "4": {
-          "name": "field_4?",
-          "type": "uint8"
-        },
-        "5": {
-          "name": "field_5?",
-          "type": "uint8"
-        }
-      }
-    },
-    "327": {
-      "name": "mesg_327?",
-      "fields": {
-        "0": {
-          "name": "field_0?",
-          "type": "uint8"
-        },
-        "1": {
-          "name": "field_1?",
-          "type": "uint8"
-        },
-        "2": {
-          "name": "field_2?",
-          "type": "uint8"
-        },
-        "3": {
-          "name": "field_3?",
-          "type": "uint32"
-        },
-        "4": {
-          "name": "field_4?",
-          "type": "uint32"
-        },
-        "5": {
-          "name": "field_5?",
-          "type": "uint32"
-        },
-        "6": {
-          "name": "field_6?",
-          "type": "enum"
-        }
-      }
-    },
     "336": {
       "name": "ecg_summary",
       "fields": {
@@ -29318,24 +29139,6 @@
         "8": {
           "name": "lower_bound_elite",
           "type": "uint16"
-        }
-      }
-    },
-    "432": {
-      "name": "msg_432?",
-      "fields": {
-        "253": {
-          "name": "timestamp",
-          "type": "date_time",
-          "units": "s"
-        },
-        "0": {
-          "name": "field_0?",
-          "type": "uint32"
-        },
-        "1": {
-          "name": "field_1?",
-          "type": "uint32"
         }
       }
     }
