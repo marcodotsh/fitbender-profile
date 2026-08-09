@@ -2370,7 +2370,7 @@
         },
         "82": {
           "name": "adventure_race",
-          "comment": "Multisport"
+          "comment": "Multisport/Running"
         },
         "83": {
           "name": "trucker_workout",
@@ -4186,6 +4186,9 @@
         "350": {
           "name": "cadence_app"
         },
+        "351": {
+          "name": "una_watch"
+        },
         "5759": {
           "name": "actigraphcorp"
         }
@@ -5564,6 +5567,9 @@
         "4588": {
           "name": "descent_g2"
         },
+        "4595": {
+          "name": "fenix7_pro_solar_no_wifi"
+        },
         "4603": {
           "name": "venu_x1"
         },
@@ -5632,6 +5638,9 @@
         },
         "4944": {
           "name": "d2_air_x15"
+        },
+        "5019": {
+          "name": "cirqa_smart_band"
         },
         "5056": {
           "name": "d2_mach2_pro"
@@ -6091,6 +6100,9 @@
         },
         "8": {
           "name": "sedentary"
+        },
+        "13": {
+          "name": "wheelchair_pushing"
         },
         "254": {
           "name": "all",
@@ -18928,6 +18940,14 @@
           "example": "1",
           "subfields": [
             {
+              "name": "total_reps",
+              "type": "uint32",
+              "units": "reps",
+              "ref_field_name": "sub_sport,sport",
+              "ref_field_value": "strength_training,hiit",
+              "example": "1"
+            },
+            {
               "name": "total_strides",
               "type": "uint32",
               "units": "strides",
@@ -18942,6 +18962,14 @@
               "ref_field_name": "sport,sport,sport,sport",
               "ref_field_value": "cycling,swimming,rowing,stand_up_paddleboarding",
               "example": "1"
+            },
+            {
+              "name": "total_pushes",
+              "type": "uint32",
+              "units": "pushes",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "total number of pushes in a session"
             }
           ]
         },
@@ -26094,6 +26122,11 @@
           "name": "vigorous_activity_minutes",
           "type": "uint16",
           "units": "minutes"
+        },
+        "41": {
+          "name": "pushes",
+          "type": "uint32",
+          "comment": "Wheelchair Pushes"
         }
       }
     },
