@@ -5546,6 +5546,15 @@
         "4556": {
           "name": "d2_mach1_pro"
         },
+        "4565": {
+          "name": "fr970"
+        },
+        "4570": {
+          "name": "fr570_large"
+        },
+        "4574": {
+          "name": "fr570_small"
+        },
         "4575": {
           "name": "enduro3"
         },
@@ -5726,10 +5735,6 @@
         "3866": {
           "name": "ag3335mn",
           "comment": "Airoha AG3335MN"
-        },
-        "4565": {
-          "name": "fr970",
-          "comment": "Forerunner 970"
         },
         "4607": {
           "name": "hrm_600",
