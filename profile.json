@@ -15383,6 +15383,9 @@
         "24": {
           "name": "laps"
         },
+        "27": {
+          "name": "distance_to_destination"
+        },
         "28": {
           "name": "ete"
         },
@@ -15476,6 +15479,9 @@
         "80": {
           "name": "power_30_s"
         },
+        "83": {
+          "name": "intensity_factor"
+        },
         "84": {
           "name": "last_lap_distance"
         },
@@ -15500,6 +15506,9 @@
         "94": {
           "name": "eta_at_next"
         },
+        "95": {
+          "name": "odometer"
+        },
         "96": {
           "name": "battery_pct"
         },
@@ -15514,6 +15523,9 @@
         },
         "108": {
           "name": "last_lap_cadence"
+        },
+        "146": {
+          "name": "power_10_s"
         },
         "165": {
           "name": "last_lap_hr"
@@ -15535,6 +15547,27 @@
         },
         "175": {
           "name": "lap_gct"
+        },
+        "176": {
+          "name": "pedal_smoothness"
+        },
+        "177": {
+          "name": "torque_effect"
+        },
+        "178": {
+          "name": "gears"
+        },
+        "179": {
+          "name": "front_gear"
+        },
+        "180": {
+          "name": "rear_gear"
+        },
+        "181": {
+          "name": "gear_battery"
+        },
+        "182": {
+          "name": "gear_ratio"
         },
         "187": {
           "name": "last_lap_hr_max"
@@ -15686,11 +15719,23 @@
         "315": {
           "name": "lap_stride_len"
         },
+        "317": {
+          "name": "light_battery"
+        },
         "320": {
           "name": "perform_cond"
         },
+        "344": {
+          "name": "speed_graph"
+        },
+        "346": {
+          "name": "power_graph"
+        },
         "395": {
           "name": "battery_hours"
+        },
+        "409": {
+          "name": "gear_combo"
         },
         "423": {
           "name": "muscle_o_2_sat"
