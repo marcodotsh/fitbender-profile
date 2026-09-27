@@ -271,6 +271,9 @@
         "103": {
           "name": "monitoring_info"
         },
+        "104": {
+          "name": "battery"
+        },
         "105": {
           "name": "pad"
         },
@@ -560,10 +563,6 @@
         },
         "89": {
           "name": "open_water_event",
-          "comment": "activity"
-        },
-        "104": {
-          "name": "device_status",
           "comment": "activity"
         },
         "113": {
@@ -4191,6 +4190,12 @@
         },
         "352": {
           "name": "tymewear"
+        },
+        "353": {
+          "name": "exposure_lights"
+        },
+        "354": {
+          "name": "forto_cycling"
         },
         "5759": {
           "name": "actigraphcorp"
@@ -14796,6 +14801,1344 @@
         }
       }
     },
+    "climb_grading_scale": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "yds"
+        },
+        "1": {
+          "name": "uiaa"
+        },
+        "2": {
+          "name": "french"
+        },
+        "3": {
+          "name": "british_adjectival"
+        },
+        "4": {
+          "name": "british_technical"
+        },
+        "5": {
+          "name": "ewbank"
+        },
+        "6": {
+          "name": "brazilian"
+        },
+        "7": {
+          "name": "saxon"
+        },
+        "8": {
+          "name": "vermin"
+        },
+        "9": {
+          "name": "font"
+        },
+        "10": {
+          "name": "dankyu"
+        },
+        "11": {
+          "name": "yds_pm",
+          "comment": "YDS Plus Minus Grading Scale"
+        }
+      }
+    },
+    "yds_grading_scale": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "5_1",
+          "comment": "5.1"
+        },
+        "1": {
+          "name": "5_2",
+          "comment": "5.2"
+        },
+        "2": {
+          "name": "5_3",
+          "comment": "5.3"
+        },
+        "3": {
+          "name": "5_4",
+          "comment": "5.4"
+        },
+        "4": {
+          "name": "5_5",
+          "comment": "5.5"
+        },
+        "5": {
+          "name": "5_6",
+          "comment": "5.6"
+        },
+        "6": {
+          "name": "5_7",
+          "comment": "5.7"
+        },
+        "7": {
+          "name": "5_8",
+          "comment": "5.8"
+        },
+        "8": {
+          "name": "5_9",
+          "comment": "5.9"
+        },
+        "9": {
+          "name": "5_10",
+          "comment": "5.1"
+        },
+        "10": {
+          "name": "5_10a",
+          "comment": "5.10a"
+        },
+        "11": {
+          "name": "5_10b",
+          "comment": "5.10b"
+        },
+        "12": {
+          "name": "5_10c",
+          "comment": "5.10c"
+        },
+        "13": {
+          "name": "5_10d",
+          "comment": "5.10d"
+        },
+        "14": {
+          "name": "5_11",
+          "comment": "5.11"
+        },
+        "15": {
+          "name": "5_11a",
+          "comment": "5.11a"
+        },
+        "16": {
+          "name": "5_11b",
+          "comment": "5.11b"
+        },
+        "17": {
+          "name": "5_11c",
+          "comment": "5.11c"
+        },
+        "18": {
+          "name": "5_11d",
+          "comment": "5.11d"
+        },
+        "19": {
+          "name": "5_12",
+          "comment": "5.12"
+        },
+        "20": {
+          "name": "5_12a",
+          "comment": "5.12a"
+        },
+        "21": {
+          "name": "5_12b",
+          "comment": "5.12b"
+        },
+        "22": {
+          "name": "5_12c",
+          "comment": "5.12c"
+        },
+        "23": {
+          "name": "5_12d",
+          "comment": "5.12d"
+        },
+        "24": {
+          "name": "5_13",
+          "comment": "5.13"
+        },
+        "25": {
+          "name": "5_13a",
+          "comment": "5.13a"
+        },
+        "26": {
+          "name": "5_13b",
+          "comment": "5.13b"
+        },
+        "27": {
+          "name": "5_13c",
+          "comment": "5.13c"
+        },
+        "28": {
+          "name": "5_13d",
+          "comment": "5.13d"
+        },
+        "29": {
+          "name": "5_14",
+          "comment": "5.14"
+        },
+        "30": {
+          "name": "5_14a",
+          "comment": "5.14a"
+        },
+        "31": {
+          "name": "5_14b",
+          "comment": "5.14b"
+        },
+        "32": {
+          "name": "5_14c",
+          "comment": "5.14c"
+        },
+        "33": {
+          "name": "5_14d",
+          "comment": "5.14d"
+        },
+        "34": {
+          "name": "5_15",
+          "comment": "5.15"
+        },
+        "35": {
+          "name": "5_15a",
+          "comment": "5.15a"
+        },
+        "36": {
+          "name": "5_15b",
+          "comment": "5.15b"
+        },
+        "37": {
+          "name": "5_15c",
+          "comment": "5.15c"
+        },
+        "38": {
+          "name": "5_15d",
+          "comment": "5.15d"
+        },
+        "39": {
+          "name": "5_1_minus",
+          "comment": "5.1-"
+        },
+        "40": {
+          "name": "5_1_plus",
+          "comment": "5.1+"
+        },
+        "41": {
+          "name": "5_2_minus",
+          "comment": "5.2-"
+        },
+        "42": {
+          "name": "5_2_plus",
+          "comment": "5.2+"
+        },
+        "43": {
+          "name": "5_3_minus",
+          "comment": "5.3-"
+        },
+        "44": {
+          "name": "5_3_plus",
+          "comment": "5.3+"
+        },
+        "45": {
+          "name": "5_4_minus",
+          "comment": "5.4-"
+        },
+        "46": {
+          "name": "5_4_plus",
+          "comment": "5.4+"
+        },
+        "47": {
+          "name": "5_5_minus",
+          "comment": "5.5-"
+        },
+        "48": {
+          "name": "5_5_plus",
+          "comment": "5.5+"
+        },
+        "49": {
+          "name": "5_6_minus",
+          "comment": "5.6-"
+        },
+        "50": {
+          "name": "5_6_plus",
+          "comment": "5.6+"
+        },
+        "51": {
+          "name": "5_7_minus",
+          "comment": "5.7-"
+        },
+        "52": {
+          "name": "5_7_plus",
+          "comment": "5.7+"
+        },
+        "53": {
+          "name": "5_8_minus",
+          "comment": "5.8-"
+        },
+        "54": {
+          "name": "5_8_plus",
+          "comment": "5.8+"
+        },
+        "55": {
+          "name": "5_9_minus",
+          "comment": "5.9-"
+        },
+        "56": {
+          "name": "5_9_plus",
+          "comment": "5.9+"
+        },
+        "57": {
+          "name": "5_10_minus",
+          "comment": "5.10-"
+        },
+        "58": {
+          "name": "5_10_plus",
+          "comment": "5.10+"
+        },
+        "59": {
+          "name": "5_11_minus",
+          "comment": "5.11-"
+        },
+        "60": {
+          "name": "5_11_plus",
+          "comment": "5.11+"
+        },
+        "61": {
+          "name": "5_12_minus",
+          "comment": "5.12-"
+        },
+        "62": {
+          "name": "5_12_plus",
+          "comment": "5.12+"
+        },
+        "63": {
+          "name": "5_13_minus",
+          "comment": "5.13-"
+        },
+        "64": {
+          "name": "5_13_plus",
+          "comment": "5.13+"
+        },
+        "65": {
+          "name": "5_14_minus",
+          "comment": "5.14-"
+        },
+        "66": {
+          "name": "5_14_plus",
+          "comment": "5.14+"
+        },
+        "67": {
+          "name": "5_15_minus",
+          "comment": "5.15-"
+        },
+        "68": {
+          "name": "5_15_plus",
+          "comment": "5.15+"
+        }
+      }
+    },
+    "uiaa_grading_scale": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "I",
+          "comment": "I"
+        },
+        "1": {
+          "name": "II",
+          "comment": "II"
+        },
+        "2": {
+          "name": "III",
+          "comment": "III"
+        },
+        "3": {
+          "name": "IV_minus",
+          "comment": "IV-"
+        },
+        "4": {
+          "name": "IV",
+          "comment": "IV"
+        },
+        "5": {
+          "name": "IV_plus",
+          "comment": "IV+"
+        },
+        "6": {
+          "name": "V_minus",
+          "comment": "V-"
+        },
+        "7": {
+          "name": "V",
+          "comment": "V"
+        },
+        "8": {
+          "name": "V_plus",
+          "comment": "V+"
+        },
+        "9": {
+          "name": "VI_minus",
+          "comment": "VI-"
+        },
+        "10": {
+          "name": "VI",
+          "comment": "VI"
+        },
+        "11": {
+          "name": "VI_plus",
+          "comment": "VI+"
+        },
+        "12": {
+          "name": "VII_minus",
+          "comment": "VII-"
+        },
+        "13": {
+          "name": "VII",
+          "comment": "VII"
+        },
+        "14": {
+          "name": "VII_plus",
+          "comment": "VII+"
+        },
+        "15": {
+          "name": "VIII_minus",
+          "comment": "VIII-"
+        },
+        "16": {
+          "name": "VIII",
+          "comment": "VIII"
+        },
+        "17": {
+          "name": "VIII_plus",
+          "comment": "VIII+"
+        },
+        "18": {
+          "name": "IX_minus",
+          "comment": "IX-"
+        },
+        "19": {
+          "name": "IX",
+          "comment": "IX"
+        },
+        "20": {
+          "name": "IX_plus",
+          "comment": "IX+"
+        },
+        "21": {
+          "name": "X_minus",
+          "comment": "X-"
+        },
+        "22": {
+          "name": "X",
+          "comment": "X"
+        },
+        "23": {
+          "name": "X_plus",
+          "comment": "X+"
+        },
+        "24": {
+          "name": "XI_minus",
+          "comment": "XI-"
+        },
+        "25": {
+          "name": "XI",
+          "comment": "XI"
+        },
+        "26": {
+          "name": "XI_plus",
+          "comment": "XI+"
+        },
+        "27": {
+          "name": "XII_minus",
+          "comment": "XII-"
+        }
+      }
+    },
+    "french_grading_scale": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "1",
+          "comment": "1"
+        },
+        "1": {
+          "name": "2",
+          "comment": "2"
+        },
+        "2": {
+          "name": "3",
+          "comment": "3"
+        },
+        "3": {
+          "name": "4a",
+          "comment": "4a"
+        },
+        "4": {
+          "name": "4b",
+          "comment": "4b"
+        },
+        "5": {
+          "name": "4c",
+          "comment": "4c"
+        },
+        "6": {
+          "name": "5a",
+          "comment": "5a"
+        },
+        "7": {
+          "name": "5b",
+          "comment": "5b"
+        },
+        "8": {
+          "name": "5c",
+          "comment": "5c"
+        },
+        "9": {
+          "name": "6a",
+          "comment": "6a"
+        },
+        "10": {
+          "name": "6a_plus",
+          "comment": "6a+"
+        },
+        "11": {
+          "name": "6b",
+          "comment": "6b"
+        },
+        "12": {
+          "name": "6b_plus",
+          "comment": "6b+"
+        },
+        "13": {
+          "name": "6c",
+          "comment": "6c"
+        },
+        "14": {
+          "name": "6c_plus",
+          "comment": "6c+"
+        },
+        "15": {
+          "name": "7a",
+          "comment": "7a"
+        },
+        "16": {
+          "name": "7a_plus",
+          "comment": "7a+"
+        },
+        "17": {
+          "name": "7b",
+          "comment": "7b"
+        },
+        "18": {
+          "name": "7b_plus",
+          "comment": "7b+"
+        },
+        "19": {
+          "name": "7c",
+          "comment": "7c"
+        },
+        "20": {
+          "name": "7c_plus",
+          "comment": "7c+"
+        },
+        "21": {
+          "name": "8a",
+          "comment": "8a"
+        },
+        "22": {
+          "name": "8a_plus",
+          "comment": "8a+"
+        },
+        "23": {
+          "name": "8b",
+          "comment": "8b"
+        },
+        "24": {
+          "name": "8b_plus",
+          "comment": "8b+"
+        },
+        "25": {
+          "name": "8c",
+          "comment": "8c"
+        },
+        "26": {
+          "name": "8c_plus",
+          "comment": "8c+"
+        },
+        "27": {
+          "name": "9a",
+          "comment": "9a"
+        },
+        "28": {
+          "name": "9a_plus",
+          "comment": "9a+"
+        },
+        "29": {
+          "name": "9b",
+          "comment": "9b"
+        }
+      }
+    },
+    "british_adjectival_grading_scale": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "M",
+          "comment": "M"
+        },
+        "1": {
+          "name": "D",
+          "comment": "D"
+        },
+        "2": {
+          "name": "HD",
+          "comment": "HD"
+        },
+        "3": {
+          "name": "VD",
+          "comment": "VD"
+        },
+        "4": {
+          "name": "MS",
+          "comment": "MS"
+        },
+        "5": {
+          "name": "S",
+          "comment": "S"
+        },
+        "6": {
+          "name": "HS",
+          "comment": "HS"
+        },
+        "7": {
+          "name": "MVS",
+          "comment": "MVS"
+        },
+        "8": {
+          "name": "VS",
+          "comment": "VS"
+        },
+        "9": {
+          "name": "HVS",
+          "comment": "HVS"
+        },
+        "10": {
+          "name": "E1",
+          "comment": "E1"
+        },
+        "11": {
+          "name": "E2",
+          "comment": "E2"
+        },
+        "12": {
+          "name": "E3",
+          "comment": "E3"
+        },
+        "13": {
+          "name": "E4",
+          "comment": "E4"
+        },
+        "14": {
+          "name": "E5",
+          "comment": "E5"
+        },
+        "15": {
+          "name": "E6",
+          "comment": "E6"
+        },
+        "16": {
+          "name": "E7",
+          "comment": "E7"
+        },
+        "17": {
+          "name": "E8",
+          "comment": "E8"
+        },
+        "18": {
+          "name": "E9",
+          "comment": "E9"
+        },
+        "19": {
+          "name": "E10",
+          "comment": "E10"
+        },
+        "20": {
+          "name": "E11",
+          "comment": "E11"
+        }
+      }
+    },
+    "british_technical_grading_scale": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "1",
+          "comment": "1"
+        },
+        "1": {
+          "name": "2",
+          "comment": "2"
+        },
+        "2": {
+          "name": "3",
+          "comment": "3"
+        },
+        "3": {
+          "name": "4a",
+          "comment": "4a"
+        },
+        "4": {
+          "name": "4b",
+          "comment": "4b"
+        },
+        "5": {
+          "name": "4c",
+          "comment": "4c"
+        },
+        "6": {
+          "name": "5a",
+          "comment": "5a"
+        },
+        "7": {
+          "name": "5b",
+          "comment": "5b"
+        },
+        "8": {
+          "name": "5c",
+          "comment": "5c"
+        },
+        "9": {
+          "name": "6a",
+          "comment": "6a"
+        },
+        "10": {
+          "name": "6b",
+          "comment": "6b"
+        },
+        "11": {
+          "name": "6c",
+          "comment": "6c"
+        },
+        "12": {
+          "name": "7a",
+          "comment": "7a"
+        },
+        "13": {
+          "name": "7b",
+          "comment": "7b"
+        },
+        "14": {
+          "name": "7c",
+          "comment": "7c"
+        }
+      }
+    },
+    "ewbank_grading_scale": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "4",
+          "comment": "4"
+        },
+        "1": {
+          "name": "5",
+          "comment": "5"
+        },
+        "2": {
+          "name": "6",
+          "comment": "6"
+        },
+        "3": {
+          "name": "7",
+          "comment": "7"
+        },
+        "4": {
+          "name": "8",
+          "comment": "8"
+        },
+        "5": {
+          "name": "9",
+          "comment": "9"
+        },
+        "6": {
+          "name": "10",
+          "comment": "10"
+        },
+        "7": {
+          "name": "11",
+          "comment": "11"
+        },
+        "8": {
+          "name": "12",
+          "comment": "12"
+        },
+        "9": {
+          "name": "13",
+          "comment": "13"
+        },
+        "10": {
+          "name": "14",
+          "comment": "14"
+        },
+        "11": {
+          "name": "15",
+          "comment": "15"
+        },
+        "12": {
+          "name": "16",
+          "comment": "16"
+        },
+        "13": {
+          "name": "17",
+          "comment": "17"
+        },
+        "14": {
+          "name": "18",
+          "comment": "18"
+        },
+        "15": {
+          "name": "19",
+          "comment": "19"
+        },
+        "16": {
+          "name": "20",
+          "comment": "20"
+        },
+        "17": {
+          "name": "21",
+          "comment": "21"
+        },
+        "18": {
+          "name": "22",
+          "comment": "22"
+        },
+        "19": {
+          "name": "23",
+          "comment": "23"
+        },
+        "20": {
+          "name": "24",
+          "comment": "24"
+        },
+        "21": {
+          "name": "25",
+          "comment": "25"
+        },
+        "22": {
+          "name": "26",
+          "comment": "26"
+        },
+        "23": {
+          "name": "27",
+          "comment": "27"
+        },
+        "24": {
+          "name": "28",
+          "comment": "28"
+        },
+        "25": {
+          "name": "29",
+          "comment": "29"
+        },
+        "26": {
+          "name": "30",
+          "comment": "30"
+        },
+        "27": {
+          "name": "31",
+          "comment": "31"
+        },
+        "28": {
+          "name": "32",
+          "comment": "32"
+        },
+        "29": {
+          "name": "33",
+          "comment": "33"
+        },
+        "30": {
+          "name": "34",
+          "comment": "34"
+        },
+        "31": {
+          "name": "35",
+          "comment": "35"
+        },
+        "32": {
+          "name": "36",
+          "comment": "36"
+        },
+        "33": {
+          "name": "37",
+          "comment": "37"
+        },
+        "34": {
+          "name": "38",
+          "comment": "38"
+        }
+      }
+    },
+    "brazilian_grading_scale": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "2",
+          "comment": "2"
+        },
+        "1": {
+          "name": "3",
+          "comment": "3"
+        },
+        "2": {
+          "name": "3c",
+          "comment": "3c"
+        },
+        "3": {
+          "name": "4",
+          "comment": "4"
+        },
+        "4": {
+          "name": "5a",
+          "comment": "5a"
+        },
+        "5": {
+          "name": "5b",
+          "comment": "5b"
+        },
+        "6": {
+          "name": "5c",
+          "comment": "5c"
+        },
+        "7": {
+          "name": "6a",
+          "comment": "6a"
+        },
+        "8": {
+          "name": "6b",
+          "comment": "6b"
+        },
+        "9": {
+          "name": "6c",
+          "comment": "6c"
+        },
+        "10": {
+          "name": "7a",
+          "comment": "7a"
+        },
+        "11": {
+          "name": "7b",
+          "comment": "7b"
+        },
+        "12": {
+          "name": "7c",
+          "comment": "7c"
+        },
+        "13": {
+          "name": "8a",
+          "comment": "8a"
+        },
+        "14": {
+          "name": "8b",
+          "comment": "8b"
+        },
+        "15": {
+          "name": "8c",
+          "comment": "8c"
+        },
+        "16": {
+          "name": "9a",
+          "comment": "9a"
+        },
+        "17": {
+          "name": "9b",
+          "comment": "9b"
+        },
+        "18": {
+          "name": "9c",
+          "comment": "9c"
+        },
+        "19": {
+          "name": "10a",
+          "comment": "10a"
+        },
+        "20": {
+          "name": "10b",
+          "comment": "10b"
+        },
+        "21": {
+          "name": "10c",
+          "comment": "10c"
+        },
+        "22": {
+          "name": "11a",
+          "comment": "11a"
+        },
+        "23": {
+          "name": "11b",
+          "comment": "11b"
+        },
+        "24": {
+          "name": "11c",
+          "comment": "11c"
+        },
+        "25": {
+          "name": "12a",
+          "comment": "12a"
+        },
+        "26": {
+          "name": "12b",
+          "comment": "12b"
+        }
+      }
+    },
+    "saxon_grading_scale": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "I",
+          "comment": "I"
+        },
+        "1": {
+          "name": "II",
+          "comment": "II"
+        },
+        "2": {
+          "name": "III",
+          "comment": "III"
+        },
+        "3": {
+          "name": "IV",
+          "comment": "IV"
+        },
+        "4": {
+          "name": "V",
+          "comment": "V"
+        },
+        "5": {
+          "name": "VI",
+          "comment": "VI"
+        },
+        "6": {
+          "name": "VII_a",
+          "comment": "VIIa"
+        },
+        "7": {
+          "name": "VII_b",
+          "comment": "VIIb"
+        },
+        "8": {
+          "name": "VII_c",
+          "comment": "VIIc"
+        },
+        "9": {
+          "name": "VIII_a",
+          "comment": "VIIIa"
+        },
+        "10": {
+          "name": "VIII_b",
+          "comment": "VIIIb"
+        },
+        "11": {
+          "name": "VIII_c",
+          "comment": "VIIIc"
+        },
+        "12": {
+          "name": "IX_a",
+          "comment": "IXa"
+        },
+        "13": {
+          "name": "IX_b",
+          "comment": "IXb"
+        },
+        "14": {
+          "name": "IX_c",
+          "comment": "IXc"
+        },
+        "15": {
+          "name": "X_a",
+          "comment": "Xa"
+        },
+        "16": {
+          "name": "X_b",
+          "comment": "Xb"
+        },
+        "17": {
+          "name": "X_c",
+          "comment": "Xc"
+        },
+        "18": {
+          "name": "XI_a",
+          "comment": "XIa"
+        },
+        "19": {
+          "name": "XI_b",
+          "comment": "XIb"
+        },
+        "20": {
+          "name": "XI_c",
+          "comment": "XIc"
+        },
+        "21": {
+          "name": "XII_a",
+          "comment": "XIIa"
+        },
+        "22": {
+          "name": "XII_b",
+          "comment": "XIIb"
+        },
+        "23": {
+          "name": "XII_c",
+          "comment": "XIIc"
+        }
+      }
+    },
+    "vermin_grading_scale": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "vb",
+          "comment": "VB"
+        },
+        "1": {
+          "name": "v0",
+          "comment": "V0"
+        },
+        "2": {
+          "name": "v1",
+          "comment": "V1"
+        },
+        "3": {
+          "name": "v2",
+          "comment": "V2"
+        },
+        "4": {
+          "name": "v3",
+          "comment": "V3"
+        },
+        "5": {
+          "name": "v4",
+          "comment": "V4"
+        },
+        "6": {
+          "name": "v5",
+          "comment": "V5"
+        },
+        "7": {
+          "name": "v6",
+          "comment": "V6"
+        },
+        "8": {
+          "name": "v7",
+          "comment": "V7"
+        },
+        "9": {
+          "name": "v8",
+          "comment": "V8"
+        },
+        "10": {
+          "name": "v9",
+          "comment": "V9"
+        },
+        "11": {
+          "name": "v10",
+          "comment": "V10"
+        },
+        "12": {
+          "name": "v11",
+          "comment": "V11"
+        },
+        "13": {
+          "name": "v12",
+          "comment": "V12"
+        },
+        "14": {
+          "name": "v13",
+          "comment": "V13"
+        },
+        "15": {
+          "name": "v14",
+          "comment": "V14"
+        },
+        "16": {
+          "name": "v15",
+          "comment": "V15"
+        },
+        "17": {
+          "name": "v16",
+          "comment": "V16"
+        },
+        "18": {
+          "name": "v17",
+          "comment": "V17"
+        }
+      }
+    },
+    "font_grading_scale": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "1",
+          "comment": "1"
+        },
+        "1": {
+          "name": "2",
+          "comment": "2"
+        },
+        "2": {
+          "name": "3",
+          "comment": "3"
+        },
+        "3": {
+          "name": "4",
+          "comment": "4"
+        },
+        "4": {
+          "name": "4_plus",
+          "comment": "4+"
+        },
+        "5": {
+          "name": "5",
+          "comment": "5"
+        },
+        "6": {
+          "name": "5_plus",
+          "comment": "5+"
+        },
+        "7": {
+          "name": "6a",
+          "comment": "6A"
+        },
+        "8": {
+          "name": "6a_plus",
+          "comment": "6A+"
+        },
+        "9": {
+          "name": "6b",
+          "comment": "6B"
+        },
+        "10": {
+          "name": "6b_plus",
+          "comment": "6B+"
+        },
+        "11": {
+          "name": "6c",
+          "comment": "6C"
+        },
+        "12": {
+          "name": "6c_plus",
+          "comment": "6C+"
+        },
+        "13": {
+          "name": "7a",
+          "comment": "7A"
+        },
+        "14": {
+          "name": "7a_plus",
+          "comment": "7A+"
+        },
+        "15": {
+          "name": "7b",
+          "comment": "7B"
+        },
+        "16": {
+          "name": "7b_plus",
+          "comment": "7B+"
+        },
+        "17": {
+          "name": "7c",
+          "comment": "7C"
+        },
+        "18": {
+          "name": "7c_plus",
+          "comment": "7C+"
+        },
+        "19": {
+          "name": "8a",
+          "comment": "8A"
+        },
+        "20": {
+          "name": "8a_plus",
+          "comment": "8A+"
+        },
+        "21": {
+          "name": "8b",
+          "comment": "8B"
+        },
+        "22": {
+          "name": "8b_plus",
+          "comment": "8B+"
+        },
+        "23": {
+          "name": "8c",
+          "comment": "8C"
+        },
+        "24": {
+          "name": "8c_plus",
+          "comment": "8C+"
+        },
+        "25": {
+          "name": "9a",
+          "comment": "9A"
+        }
+      }
+    },
+    "dankyu_grading_scale": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "7_kyuu",
+          "comment": "7 kyuu"
+        },
+        "1": {
+          "name": "6_kyuu",
+          "comment": "6 kyuu"
+        },
+        "2": {
+          "name": "5_kyuu",
+          "comment": "5 kyuu"
+        },
+        "3": {
+          "name": "4_kyuu",
+          "comment": "4 kyuu"
+        },
+        "4": {
+          "name": "3_kyuu",
+          "comment": "3 kyuu"
+        },
+        "5": {
+          "name": "2_kyuu",
+          "comment": "2 kyuu"
+        },
+        "6": {
+          "name": "1_kyuu",
+          "comment": "1 kyuu"
+        },
+        "7": {
+          "name": "1_dan",
+          "comment": "1 dan"
+        },
+        "8": {
+          "name": "2_dan",
+          "comment": "2 dan"
+        },
+        "9": {
+          "name": "3_dan",
+          "comment": "3 dan"
+        },
+        "10": {
+          "name": "4_dan",
+          "comment": "4 dan"
+        },
+        "11": {
+          "name": "5_dan",
+          "comment": "5 dan"
+        }
+      }
+    },
+    "split_status": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "failure"
+        },
+        "1": {
+          "name": "success"
+        },
+        "2": {
+          "name": "climb_attempted"
+        },
+        "3": {
+          "name": "climb_completed"
+        }
+      }
+    },
     "tap_sensitivity": {
       "base_type": "enum",
       "values": {
@@ -14974,6 +16317,58 @@
         "1": {
           "name": "flat_24_hours",
           "comment": "Flat 24 hour no-fly guidance"
+        }
+      }
+    },
+    "dive_section_type": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "ascent"
+        },
+        "1": {
+          "name": "descent"
+        },
+        "2": {
+          "name": "hang"
+        }
+      }
+    },
+    "apnea_discipline": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "constant_weight_with_fins"
+        },
+        "1": {
+          "name": "constant_weight_with_bifins"
+        },
+        "2": {
+          "name": "constant_weight_without_fins"
+        },
+        "3": {
+          "name": "dynamic_with_fins"
+        },
+        "4": {
+          "name": "dynamic_with_bifins"
+        },
+        "5": {
+          "name": "dynamic_without_fins"
+        },
+        "6": {
+          "name": "free_immersion"
+        },
+        "7": {
+          "name": "no_limit"
+        },
+        "8": {
+          "name": "speed_endurance_apnea"
+        },
+        "9": {
+          "name": "static_apnea"
+        },
+        "10": {
+          "name": "variable_weight"
         }
       }
     },
@@ -19121,6 +20516,30 @@
               "ref_field_name": "sport",
               "ref_field_value": "running",
               "example": "1"
+            },
+            {
+              "name": "avg_swimming_cadence",
+              "type": "uint8",
+              "units": "strokes/min",
+              "ref_field_name": "sport",
+              "ref_field_value": "swimming",
+              "example": "1"
+            },
+            {
+              "name": "avg_paddlesport_cadence",
+              "type": "uint8",
+              "units": "strokes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "rowing,stand_up_paddleboarding",
+              "example": "1"
+            },
+            {
+              "name": "avg_push_cadence",
+              "type": "uint8",
+              "units": "pushes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "average pushes per minute in a session"
             }
           ]
         },
@@ -19137,6 +20556,30 @@
               "ref_field_name": "sport",
               "ref_field_value": "running",
               "example": "1"
+            },
+            {
+              "name": "max_swimming_cadence",
+              "type": "uint8",
+              "units": "strokes/min",
+              "ref_field_name": "sport",
+              "ref_field_value": "swimming",
+              "example": "1"
+            },
+            {
+              "name": "max_paddlesport_cadence",
+              "type": "uint8",
+              "units": "strokes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "rowing,stand_up_paddleboarding",
+              "example": "1"
+            },
+            {
+              "name": "max_push_cadence",
+              "type": "uint8",
+              "units": "pushes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "max pushes per minute in a session"
             }
           ]
         },
@@ -19489,6 +20932,18 @@
           "units": "s",
           "example": "1"
         },
+        "79": {
+          "name": "avg_strokes_per_length",
+          "type": "uint16",
+          "scale": "10",
+          "units": "strokes/length",
+          "example": "1"
+        },
+        "80": {
+          "name": "avg_swolf",
+          "type": "uint16",
+          "example": "1"
+        },
         "82": {
           "name": "player_score",
           "type": "uint16",
@@ -19656,6 +21111,21 @@
           "type": "uint8",
           "scale": "2",
           "units": "percent"
+        },
+        "106": {
+          "name": "num_segment_laps",
+          "type": "uint16",
+          "example": "1"
+        },
+        "107": {
+          "name": "front_gear_shift_count",
+          "type": "uint16",
+          "example": "1"
+        },
+        "108": {
+          "name": "rear_gear_shift_count",
+          "type": "uint16",
+          "example": "1"
         },
         "110": {
           "name": "sport_profile_name",
@@ -20041,15 +21511,11 @@
           "scale": "100",
           "units": "C"
         },
-        "79": {
-          "name": "avg_swim_cadence",
-          "type": "uint16",
-          "scale": 10.0,
-          "units": "strokes/length"
-        },
-        "80": {
-          "name": "avg_swolf",
-          "type": "uint16"
+        "211": {
+          "name": "avg_grade_adjusted_speed",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "m/s"
         },
         "151": {
           "name": "total_sets",
@@ -20099,12 +21565,6 @@
         "207": {
           "name": "min_stamina",
           "type": "uint8"
-        },
-        "211": {
-          "name": "grade_adjusted_speed",
-          "type": "uint32",
-          "scale": 1000.0,
-          "units": "m/s"
         },
         "212": {
           "name": "wind_data",
@@ -20253,6 +21713,14 @@
               "ref_field_name": "sport,sport,sport,sport",
               "ref_field_value": "cycling,swimming,rowing,stand_up_paddleboarding",
               "example": "1"
+            },
+            {
+              "name": "total_pushes",
+              "type": "uint32",
+              "units": "pushes",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "total number of pushes in a lap"
             }
           ]
         },
@@ -20313,6 +21781,30 @@
               "ref_field_name": "sport",
               "ref_field_value": "running",
               "example": "1"
+            },
+            {
+              "name": "avg_swimming_cadence",
+              "type": "uint8",
+              "units": "strokes/min",
+              "ref_field_name": "sport",
+              "ref_field_value": "swimming",
+              "example": "1"
+            },
+            {
+              "name": "avg_paddlesport_cadence",
+              "type": "uint8",
+              "units": "strokes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "rowing,stand_up_paddleboarding",
+              "example": "1"
+            },
+            {
+              "name": "avg_push_cadence",
+              "type": "uint8",
+              "units": "pushes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "average pushes per minute in a lap"
             }
           ]
         },
@@ -20329,6 +21821,30 @@
               "ref_field_name": "sport",
               "ref_field_value": "running",
               "example": "1"
+            },
+            {
+              "name": "max_swimming_cadence",
+              "type": "uint8",
+              "units": "strokes/min",
+              "ref_field_name": "sport",
+              "ref_field_value": "swimming",
+              "example": "1"
+            },
+            {
+              "name": "max_paddlesport_cadence",
+              "type": "uint8",
+              "units": "strokes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "rowing,stand_up_paddleboarding",
+              "example": "1"
+            },
+            {
+              "name": "max_push_cadence",
+              "type": "uint8",
+              "units": "pushes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "max pushes per minute in a lap"
             }
           ]
         },
@@ -20375,6 +21891,34 @@
         "26": {
           "name": "event_group",
           "type": "uint8",
+          "example": "1"
+        },
+        "27": {
+          "name": "nec_lat",
+          "type": "sint32",
+          "units": "semicircles",
+          "comment": "North east corner latitude.",
+          "example": "1"
+        },
+        "28": {
+          "name": "nec_long",
+          "type": "sint32",
+          "units": "semicircles",
+          "comment": "North east corner longitude.",
+          "example": "1"
+        },
+        "29": {
+          "name": "swc_lat",
+          "type": "sint32",
+          "units": "semicircles",
+          "comment": "South west corner latitude.",
+          "example": "1"
+        },
+        "30": {
+          "name": "swc_long",
+          "type": "sint32",
+          "units": "semicircles",
+          "comment": "South west corner latitude.",
           "example": "1"
         },
         "32": {
@@ -20603,6 +22147,11 @@
           "type": "message_index",
           "example": "1"
         },
+        "73": {
+          "name": "avg_swolf",
+          "type": "uint16",
+          "example": "1"
+        },
         "74": {
           "name": "opponent_score",
           "type": "uint16",
@@ -20728,6 +22277,13 @@
           "comment": "Max percentage of hemoglobin saturated with oxygen",
           "example": "1"
         },
+        "90": {
+          "name": "avg_strokes_per_length",
+          "type": "uint16",
+          "scale": "10",
+          "units": "strokes / length",
+          "example": "1"
+        },
         "91": {
           "name": "avg_left_torque_effectiveness",
           "type": "uint8",
@@ -20757,6 +22313,16 @@
           "type": "uint8",
           "scale": "2",
           "units": "percent"
+        },
+        "96": {
+          "name": "front_gear_shift_count",
+          "type": "uint16",
+          "example": "1"
+        },
+        "97": {
+          "name": "rear_gear_shift_count",
+          "type": "uint16",
+          "example": "1"
         },
         "98": {
           "name": "time_standing",
@@ -20997,6 +22563,11 @@
           "units": "Flow",
           "comment": "The flow score estimates how long distance wise a cyclist deaccelerates over intervals where deacceleration is unnecessary such as smooth turns or small grade angle intervals."
         },
+        "155": {
+          "name": "metabolic_calories",
+          "type": "uint16",
+          "units": "kcal"
+        },
         "156": {
           "name": "total_fractional_ascent",
           "type": "uint8",
@@ -21029,29 +22600,11 @@
           "scale": "100",
           "units": "C"
         },
-        "27": {
-          "name": "nec_lat",
-          "type": "sint32",
-          "units": "semicircles"
-        },
-        "28": {
-          "name": "nec_long",
-          "type": "sint32",
-          "units": "semicircles"
-        },
-        "29": {
-          "name": "swc_lat",
-          "type": "sint32",
-          "units": "semicircles"
-        },
-        "30": {
-          "name": "swc_long",
-          "type": "sint32",
-          "units": "semicircles"
-        },
-        "73": {
-          "name": "avg_swolf",
-          "type": "uint16"
+        "161": {
+          "name": "avg_grade_adjusted_speed",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "m/s"
         },
         "145": {
           "name": "est_sweat_loss",
@@ -21061,17 +22614,6 @@
           "name": "execution_score",
           "type": "uint8",
           "units": "percent"
-        },
-        "155": {
-          "name": "resting_calories",
-          "type": "uint16",
-          "units": "kcal"
-        },
-        "161": {
-          "name": "grade_adjusted_speed",
-          "type": "uint32",
-          "scale": 1000.0,
-          "units": "m/s"
         },
         "163": {
           "name": "unpaved",
@@ -21242,6 +22784,11 @@
           "type": "uint8",
           "components": "enhanced_max_respiration_rate",
           "bits": "8"
+        },
+        "26": {
+          "name": "metabolic_calories",
+          "type": "uint16",
+          "units": "kcal"
         }
       }
     },
@@ -22421,6 +23968,33 @@
         }
       }
     },
+    "104": {
+      "name": "battery",
+      "fields": {
+        "253": {
+          "name": "timestamp",
+          "type": "date_time",
+          "example": "1"
+        },
+        "2": {
+          "name": "capacity",
+          "type": "uint8",
+          "units": "%",
+          "example": "1"
+        },
+        "0": {
+          "name": "battery_voltage",
+          "type": "uint16",
+          "scale": 1000.0,
+          "units": "V"
+        },
+        "3": {
+          "name": "temperature",
+          "type": "sint8",
+          "units": "\u00b0C"
+        }
+      }
+    },
     "128": {
       "name": "weather_conditions",
       "fields": {
@@ -22897,6 +24471,14 @@
           "units": "Pa",
           "array": "[N]",
           "comment": "These are the raw ADC reading. The samples may span across seconds. A conversion will need to be done on this data once read."
+        },
+        "3": {
+          "name": "enhanced_altitude",
+          "type": "uint32",
+          "scale": "5",
+          "offset": "500",
+          "units": "m",
+          "array": "[N]"
         }
       }
     },
@@ -23442,6 +25024,11 @@
           "name": "message_index",
           "type": "message_index"
         },
+        "253": {
+          "name": "timestamp",
+          "type": "date_time",
+          "units": "s"
+        },
         "0": {
           "name": "split_type",
           "type": "split_type"
@@ -23474,6 +25061,14 @@
           "name": "start_time",
           "type": "date_time"
         },
+        "11": {
+          "name": "sport",
+          "type": "sport"
+        },
+        "12": {
+          "name": "sub_sport",
+          "type": "sub_sport"
+        },
         "13": {
           "name": "total_ascent",
           "type": "uint16",
@@ -23483,6 +25078,40 @@
           "name": "total_descent",
           "type": "uint16",
           "units": "m"
+        },
+        "15": {
+          "name": "avg_heart_rate",
+          "type": "uint8",
+          "units": "bpm"
+        },
+        "16": {
+          "name": "max_heart_rate",
+          "type": "uint8",
+          "units": "bpm"
+        },
+        "17": {
+          "name": "nec_lat",
+          "type": "sint32",
+          "units": "semicircles",
+          "comment": "North east corner latitude"
+        },
+        "18": {
+          "name": "nec_long",
+          "type": "sint32",
+          "units": "semicircles",
+          "comment": "North east corner longitude"
+        },
+        "19": {
+          "name": "swc_lat",
+          "type": "sint32",
+          "units": "semicircles",
+          "comment": "South west corner latitude"
+        },
+        "20": {
+          "name": "swc_long",
+          "type": "sint32",
+          "units": "semicircles",
+          "comment": "South west corner longitude"
         },
         "21": {
           "name": "start_position_lat",
@@ -23525,79 +25154,120 @@
           "type": "uint32",
           "units": "kcal"
         },
-        "74": {
-          "name": "start_elevation",
-          "type": "uint32",
-          "scale": "5",
-          "offset": "500",
-          "units": "m"
-        },
-        "78": {
-          "name": "active_time",
-          "type": "uint32",
-          "scale": "1000",
-          "units": "s",
-          "comment": "Active time of split rounds"
-        },
-        "110": {
-          "name": "total_moving_time",
-          "type": "uint32",
-          "scale": "1000",
-          "units": "s"
-        },
-        "7": {
-          "name": "start_distance",
-          "type": "uint32",
-          "scale": 100.0,
-          "units": "m"
-        },
-        "11": {
-          "name": "sport",
-          "type": "sport"
-        },
-        "12": {
-          "name": "sub_sport",
-          "type": "sub_sport"
-        },
-        "15": {
-          "name": "avg_heart_rate",
-          "type": "uint8",
-          "units": "bpm"
-        },
-        "16": {
-          "name": "max_heart_rate",
-          "type": "uint8",
-          "units": "bpm"
-        },
         "29": {
           "name": "avg_cadence",
           "type": "uint16",
-          "scale": 128.0,
+          "scale": "128",
           "units": "rpm",
           "subfields": [
             {
               "name": "avg_running_cadence",
               "type": "uint16",
-              "scale": 128.0,
+              "scale": "128",
               "units": "strides/min",
               "ref_field_name": "sport",
               "ref_field_value": "running"
+            },
+            {
+              "name": "avg_swimming_cadence",
+              "type": "uint16",
+              "scale": "128",
+              "units": "strokes/min",
+              "ref_field_name": "sport",
+              "ref_field_value": "swimming"
+            },
+            {
+              "name": "avg_paddlesport_cadence",
+              "type": "uint16",
+              "scale": "128",
+              "units": "strokes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "rowing,stand_up_paddleboarding"
+            },
+            {
+              "name": "avg_push_cadence",
+              "type": "uint16",
+              "units": "pushes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "average pushes per minute in a split"
             }
           ]
         },
         "30": {
           "name": "max_cadence",
           "type": "uint16",
-          "scale": 128.0,
+          "scale": "128",
           "units": "rpm",
           "subfields": [
             {
               "name": "max_running_cadence",
               "type": "uint16",
-              "scale": 128.0,
+              "scale": "128",
               "units": "strides/min",
               "ref_field_name": "sport",
               "ref_field_value": "running"
+            },
+            {
+              "name": "max_swimming_cadence",
+              "type": "uint16",
+              "scale": "128",
+              "units": "strokes/min",
+              "ref_field_name": "sport",
+              "ref_field_value": "swimming"
+            },
+            {
+              "name": "max_paddlesport_cadence",
+              "type": "uint16",
+              "scale": "128",
+              "units": "strokes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "rowing,stand_up_paddleboarding"
+            },
+            {
+              "name": "max_push_cadence",
+              "type": "uint16",
+              "units": "pushes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "max pushes per minute in a split"
+            }
+          ]
+        },
+        "31": {
+          "name": "total_cycles",
+          "type": "uint32",
+          "units": "cycles",
+          "subfields": [
+            {
+              "name": "total_strides",
+              "type": "uint32",
+              "units": "strides",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "running,walking"
+            },
+            {
+              "name": "total_strokes",
+              "type": "uint32",
+              "units": "strokes",
+              "ref_field_name": "sport,sport,sport,sport",
+              "ref_field_value": "cycling,swimming,rowing,stand_up_paddleboarding"
+            },
+            {
+              "name": "total_reps",
+              "type": "uint32",
+              "units": "reps",
+              "ref_field_name": "sport",
+              "ref_field_value": "hiit",
+              "comment": "total reps in a split round"
+            },
+            {
+              "name": "total_pushes",
+              "type": "uint32",
+              "units": "pushes",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "total number of pushes in a split"
             }
           ]
         },
@@ -23619,38 +25289,37 @@
         "35": {
           "name": "avg_vertical_oscillation",
           "type": "uint16",
-          "scale": 10.0,
+          "scale": "10",
           "units": "mm"
-        },
-        "37": {
-          "name": "avg_stance_time",
-          "type": "uint16",
-          "scale": 10.0,
-          "units": "ms"
         },
         "36": {
           "name": "avg_vertical_ratio",
           "type": "uint16",
-          "scale": 100.0,
+          "scale": "100",
+          "units": "percent"
+        },
+        "37": {
+          "name": "avg_stance_time",
+          "type": "uint16",
+          "scale": "10",
+          "units": "ms"
+        },
+        "38": {
+          "name": "avg_stance_time_balance",
+          "type": "uint16",
+          "scale": "100",
           "units": "percent"
         },
         "39": {
           "name": "avg_step_length",
           "type": "uint16",
-          "scale": 10.0,
+          "scale": "10",
           "units": "mm"
-        },
-        "38": {
-          "name": "avg_stance_time_balance",
-          "type": "uint16",
-          "scale": 100.0,
-          "units": "percent"
         },
         "40": {
           "name": "avg_power",
           "type": "uint16",
-          "units": "watts",
-          "comment": "total_power / total_timer_time if non_zero_avg_power otherwise total_power / total_elapsed_time"
+          "units": "watts"
         },
         "41": {
           "name": "max_power",
@@ -23662,25 +25331,460 @@
           "type": "uint16",
           "units": "watts"
         },
-        "67": {
-          "name": "lap_index",
+        "43": {
+          "name": "left_right_balance",
+          "type": "left_right_balance_100"
+        },
+        "44": {
+          "name": "time_standing",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "s",
+          "comment": "Total time spent in the standing position"
+        },
+        "45": {
+          "name": "avg_left_pco",
+          "type": "sint8",
+          "units": "mm",
+          "comment": "Average left platform center offset"
+        },
+        "46": {
+          "name": "avg_right_pco",
+          "type": "sint8",
+          "units": "mm",
+          "comment": "Average right platform center offset"
+        },
+        "47": {
+          "name": "avg_left_power_phase",
+          "type": "uint8",
+          "scale": "0.7111111",
+          "units": "degrees",
+          "array": "[N]",
+          "comment": "Average left power phase angles. Data value indexes defined by power_phase_type."
+        },
+        "48": {
+          "name": "avg_left_power_phase_peak",
+          "type": "uint8",
+          "scale": "0.7111111",
+          "units": "degrees",
+          "array": "[N]",
+          "comment": "Average left power phase peak angles. Data value indexes defined by power_phase_type."
+        },
+        "49": {
+          "name": "avg_right_power_phase",
+          "type": "uint8",
+          "scale": "0.7111111",
+          "units": "degrees",
+          "array": "[N]",
+          "comment": "Average right power phase angles. Data value indexes defined by power_phase_type."
+        },
+        "50": {
+          "name": "avg_right_power_phase_peak",
+          "type": "uint8",
+          "scale": "0.7111111",
+          "units": "degrees",
+          "array": "[N]",
+          "comment": "Average right power phase peak angles. Data value indexes defined by power_phase_type."
+        },
+        "51": {
+          "name": "avg_power_position",
+          "type": "uint16",
+          "units": "watts",
+          "array": "[N]",
+          "comment": "Average power by position. Data value indexes defined by rider_position_type."
+        },
+        "52": {
+          "name": "max_power_position",
+          "type": "uint16",
+          "units": "watts",
+          "array": "[N]",
+          "comment": "Maximum power by position. Data value indexes defined by rider_position_type."
+        },
+        "53": {
+          "name": "avg_left_torque_effectiveness",
+          "type": "uint8",
+          "scale": "2",
+          "units": "percent"
+        },
+        "54": {
+          "name": "avg_right_torque_effectiveness",
+          "type": "uint8",
+          "scale": "2",
+          "units": "percent"
+        },
+        "55": {
+          "name": "avg_left_pedal_smoothness",
+          "type": "uint8",
+          "scale": "2",
+          "units": "percent"
+        },
+        "56": {
+          "name": "avg_right_pedal_smoothness",
+          "type": "uint8",
+          "scale": "2",
+          "units": "percent"
+        },
+        "57": {
+          "name": "avg_combined_pedal_smoothness",
+          "type": "uint8",
+          "scale": "2",
+          "units": "percent"
+        },
+        "58": {
+          "name": "avg_flow",
+          "type": "float32",
+          "units": "Flow",
+          "comment": "The flow score estimates how long distance wise a cyclist deaccelerates over intervals where deacceleration is unnecessary such as smooth turns or small grade angle intervals."
+        },
+        "59": {
+          "name": "total_grit",
+          "type": "float32",
+          "units": "kGrit",
+          "comment": "The grit score estimates how challenging a route could be for a cyclist in terms of time spent going over sharp turns or large grade slopes."
+        },
+        "62": {
+          "name": "swim_stroke",
+          "type": "swim_stroke"
+        },
+        "63": {
+          "name": "num_active_lengths",
+          "type": "uint16",
+          "units": "lengths",
+          "comment": "# of active lengths of swim pool"
+        },
+        "64": {
+          "name": "avg_swolf",
           "type": "uint16"
         },
+        "65": {
+          "name": "avg_stroke_distance",
+          "type": "uint16",
+          "scale": "100",
+          "units": "m"
+        },
+        "66": {
+          "name": "avg_strokes_per_length",
+          "type": "uint16",
+          "scale": "10",
+          "units": "strokes / length"
+        },
+        "67": {
+          "name": "first_lap_index",
+          "type": "uint16",
+          "comment": "This is only set for split types that will trigger the end of a lap when the split ends"
+        },
+        "68": {
+          "name": "num_laps",
+          "type": "uint16",
+          "comment": "This is only set for split types that will trigger the end of a lap when the split ends"
+        },
+        "69": {
+          "name": "climb_grading_scale",
+          "type": "climb_grading_scale"
+        },
+        "70": {
+          "name": "climb_grade_value",
+          "type": "uint32",
+          "subfields": [
+            {
+              "name": "climb_grade_yds",
+              "type": "yds_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "yds"
+            },
+            {
+              "name": "climb_grade_uiaa",
+              "type": "uiaa_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "uiaa"
+            },
+            {
+              "name": "climb_grade_french",
+              "type": "french_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "french"
+            },
+            {
+              "name": "climb_grade_british_adjectival",
+              "type": "british_adjectival_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "british_adjectival"
+            },
+            {
+              "name": "climb_grade_british_technical",
+              "type": "british_technical_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "british_technical"
+            },
+            {
+              "name": "climb_grade_ewbank",
+              "type": "ewbank_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "ewbank"
+            },
+            {
+              "name": "climb_grade_brazilian",
+              "type": "brazilian_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "brazilian"
+            },
+            {
+              "name": "climb_grade_saxon",
+              "type": "saxon_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "saxon"
+            },
+            {
+              "name": "climb_grade_vermin",
+              "type": "vermin_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "vermin"
+            },
+            {
+              "name": "climb_grade_font",
+              "type": "font_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "font"
+            },
+            {
+              "name": "climb_grade_dankyu",
+              "type": "dankyu_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "dankyu"
+            }
+          ]
+        },
+        "71": {
+          "name": "status",
+          "type": "split_status",
+          "comment": "Use with indoor climbing activities only"
+        },
+        "72": {
+          "name": "num_falls",
+          "type": "uint16",
+          "comment": "Use with indoor climbing activities only"
+        },
+        "73": {
+          "name": "climb_send",
+          "type": "bool",
+          "comment": "Use with indoor climbing activities only"
+        },
+        "74": {
+          "name": "start_elevation",
+          "type": "uint32",
+          "scale": "5",
+          "offset": "500",
+          "units": "m"
+        },
+        "78": {
+          "name": "active_time",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "s",
+          "comment": "Active time of split rounds"
+        },
         "79": {
-          "name": "resting_calories",
+          "name": "metabolic_calories",
           "type": "uint16",
           "units": "kcal"
         },
+        "80": {
+          "name": "total_fractional_ascent",
+          "type": "uint8",
+          "scale": "100",
+          "units": "m",
+          "comment": "fractional part of total_ascent"
+        },
+        "81": {
+          "name": "total_fractional_descent",
+          "type": "uint8",
+          "scale": "100",
+          "units": "m",
+          "comment": "fractional part of total_descent"
+        },
+        "88": {
+          "name": "avg_grade",
+          "type": "sint16",
+          "scale": "100",
+          "units": "%"
+        },
+        "89": {
+          "name": "max_grade",
+          "type": "sint16",
+          "scale": "100",
+          "units": "%"
+        },
+        "90": {
+          "name": "min_cadence",
+          "type": "uint16",
+          "scale": "128",
+          "units": "rpm",
+          "subfields": [
+            {
+              "name": "min_running_cadence",
+              "type": "uint16",
+              "scale": "128",
+              "units": "strides/min",
+              "ref_field_name": "sport",
+              "ref_field_value": "running"
+            },
+            {
+              "name": "min_swimming_cadence",
+              "type": "uint16",
+              "scale": "128",
+              "units": "strokes/min",
+              "ref_field_name": "sport",
+              "ref_field_value": "swimming"
+            },
+            {
+              "name": "min_paddlesport_cadence",
+              "type": "uint16",
+              "scale": "128",
+              "units": "strokes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "rowing,stand_up_paddleboarding"
+            },
+            {
+              "name": "min_push_cadence",
+              "type": "uint16",
+              "units": "pushes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "min pushes per minute in a split"
+            }
+          ]
+        },
         "93": {
-          "name": "grade_adjusted_speed",
+          "name": "avg_grade_adjusted_speed",
           "type": "uint32",
-          "scale": 1000.0,
+          "scale": "1000",
           "units": "m/s"
         },
         "94": {
-          "name": "avg_hrv",
+          "name": "avg_stress",
+          "type": "uint16"
+        },
+        "99": {
+          "name": "avg_vam",
           "type": "uint16",
-          "comment": "RMSSD"
+          "scale": "1000",
+          "units": "m/s"
+        },
+        "104": {
+          "name": "jump_count",
+          "type": "uint8"
+        },
+        "110": {
+          "name": "total_moving_time",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "s"
+        },
+        "112": {
+          "name": "dive_section_type",
+          "type": "dive_section_type"
+        },
+        "113": {
+          "name": "avg_ascent_rate",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "m/s"
+        },
+        "114": {
+          "name": "max_ascent_rate",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "m/s"
+        },
+        "115": {
+          "name": "avg_descent_rate",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "m/s"
+        },
+        "116": {
+          "name": "max_descent_rate",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "m/s"
+        },
+        "117": {
+          "name": "total_ascent_time",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "s"
+        },
+        "118": {
+          "name": "total_descent_time",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "s"
+        },
+        "119": {
+          "name": "total_hang_time",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "s"
+        },
+        "120": {
+          "name": "apnea_discipline",
+          "type": "apnea_discipline"
+        },
+        "121": {
+          "name": "avg_depth",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "m",
+          "comment": "Average depth. 0 if above water"
+        },
+        "122": {
+          "name": "max_depth",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "m",
+          "comment": "Max depth. 0 if above water"
+        },
+        "124": {
+          "name": "min_heart_rate",
+          "type": "uint8",
+          "units": "bpm"
+        },
+        "127": {
+          "name": "surface_interval",
+          "type": "uint32",
+          "units": "s",
+          "comment": "Time since end of last dive"
+        },
+        "142": {
+          "name": "total_fractional_cycles",
+          "type": "uint8",
+          "scale": "128",
+          "units": "cycles"
+        },
+        "144": {
+          "name": "avg_stance_time_percent",
+          "type": "uint16",
+          "scale": "100",
+          "units": "percent"
+        },
+        "168": {
+          "name": "total_anaerobic_training_effect",
+          "type": "uint8",
+          "scale": "10"
+        },
+        "169": {
+          "name": "front_gear_shift_count",
+          "type": "uint16"
+        },
+        "170": {
+          "name": "rear_gear_shift_count",
+          "type": "uint16"
+        },
+        "7": {
+          "name": "start_distance",
+          "type": "uint32",
+          "scale": 100.0,
+          "units": "m"
         },
         "95": {
           "name": "max_hrv",
@@ -23734,9 +25838,22 @@
           "name": "message_index",
           "type": "message_index"
         },
+        "253": {
+          "name": "timestamp",
+          "type": "date_time",
+          "units": "s"
+        },
         "0": {
           "name": "split_type",
           "type": "split_type"
+        },
+        "1": {
+          "name": "sport",
+          "type": "sport"
+        },
+        "2": {
+          "name": "sub_sport",
+          "type": "sub_sport"
         },
         "3": {
           "name": "num_splits",
@@ -23797,58 +25914,130 @@
           "type": "uint32",
           "units": "kcal"
         },
-        "65": {
-          "name": "active_time",
-          "type": "uint32",
-          "scale": "1000",
-          "units": "s",
-          "comment": "total active time in all split rounds"
-        },
-        "77": {
-          "name": "total_moving_time",
-          "type": "uint32",
-          "scale": "1000",
-          "units": "s"
-        },
-        "253": {
-          "name": "timestamp",
-          "type": "date_time",
-          "units": "s"
-        },
         "14": {
           "name": "avg_cadence",
           "type": "uint16",
-          "scale": 128.0,
+          "scale": "128",
           "units": "rpm",
           "subfields": [
             {
               "name": "avg_running_cadence",
               "type": "uint16",
-              "scale": 128.0,
+              "scale": "128",
               "units": "strides/min",
               "ref_field_name": "sport",
               "ref_field_value": "running"
+            },
+            {
+              "name": "avg_swimming_cadence",
+              "type": "uint16",
+              "scale": "128",
+              "units": "strokes/min",
+              "ref_field_name": "sport",
+              "ref_field_value": "swimming"
+            },
+            {
+              "name": "avg_paddlesport_cadence",
+              "type": "uint16",
+              "scale": "128",
+              "units": "strokes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "rowing,stand_up_paddleboarding"
+            },
+            {
+              "name": "avg_push_cadence",
+              "type": "uint16",
+              "units": "pushes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "average pushes per minute in all splits of the type"
             }
           ]
         },
         "15": {
           "name": "max_cadence",
           "type": "uint16",
-          "scale": 128.0,
+          "scale": "128",
           "units": "rpm",
           "subfields": [
             {
               "name": "max_running_cadence",
               "type": "uint16",
-              "scale": 128.0,
+              "scale": "128",
               "units": "strides/min",
               "ref_field_name": "sport",
               "ref_field_value": "running"
+            },
+            {
+              "name": "max_swimming_cadence",
+              "type": "uint16",
+              "scale": "128",
+              "units": "strokes/min",
+              "ref_field_name": "sport",
+              "ref_field_value": "swimming"
+            },
+            {
+              "name": "max_paddlesport_cadence",
+              "type": "uint16",
+              "scale": "128",
+              "units": "strokes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "rowing,stand_up_paddleboarding"
+            },
+            {
+              "name": "max_push_cadence",
+              "type": "uint16",
+              "units": "pushes/min",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "max pushes per minute in all splits of the type"
+            }
+          ]
+        },
+        "16": {
+          "name": "total_cycles",
+          "type": "uint32",
+          "units": "cycles",
+          "subfields": [
+            {
+              "name": "total_strides",
+              "type": "uint32",
+              "units": "strides",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "running,walking"
+            },
+            {
+              "name": "total_strokes",
+              "type": "uint32",
+              "units": "strokes",
+              "ref_field_name": "sport,sport,sport,sport",
+              "ref_field_value": "cycling,swimming,rowing,stand_up_paddleboarding"
+            },
+            {
+              "name": "total_reps",
+              "type": "uint32",
+              "units": "reps",
+              "ref_field_name": "sport",
+              "ref_field_value": "hiit",
+              "comment": "total reps in all splits"
+            },
+            {
+              "name": "total_pushes",
+              "type": "uint32",
+              "units": "pushes",
+              "ref_field_name": "sport,sport",
+              "ref_field_value": "wheelchair_push_run,wheelchair_push_walk",
+              "comment": "total number of pushes in all splits of the type"
             }
           ]
         },
         "17": {
           "name": "avg_temperature",
+          "type": "sint8",
+          "units": "C"
+        },
+        "18": {
+          "name": "max_temperature",
           "type": "sint8",
           "units": "C"
         },
@@ -23860,32 +26049,37 @@
         "20": {
           "name": "avg_vertical_oscillation",
           "type": "uint16",
-          "scale": 10.0,
+          "scale": "10",
           "units": "mm"
         },
         "21": {
           "name": "avg_vertical_ratio",
           "type": "uint16",
-          "scale": 100.0,
+          "scale": "100",
           "units": "percent"
         },
         "22": {
           "name": "avg_stance_time",
           "type": "uint16",
-          "scale": 10.0,
+          "scale": "10",
           "units": "ms"
+        },
+        "23": {
+          "name": "avg_stance_time_balance",
+          "type": "uint16",
+          "scale": "100",
+          "units": "percent"
         },
         "24": {
           "name": "avg_step_length",
           "type": "uint16",
-          "scale": 10.0,
+          "scale": "10",
           "units": "mm"
         },
         "25": {
           "name": "avg_power",
           "type": "uint16",
-          "units": "watts",
-          "comment": "total_power / total_timer_time if non_zero_avg_power otherwise total_power / total_elapsed_time"
+          "units": "watts"
         },
         "26": {
           "name": "max_power",
@@ -23897,41 +26091,329 @@
           "type": "uint16",
           "units": "watts"
         },
+        "28": {
+          "name": "left_right_balance",
+          "type": "left_right_balance_100",
+          "comment": "Total time spent in the standing position"
+        },
+        "29": {
+          "name": "time_standing",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "s",
+          "comment": "Average left platform center offset"
+        },
+        "30": {
+          "name": "avg_left_pco",
+          "type": "sint8",
+          "units": "mm",
+          "comment": "Average right platform center offset"
+        },
+        "31": {
+          "name": "avg_right_pco",
+          "type": "sint8",
+          "units": "mm",
+          "comment": "Average left power phase angles. Data value indexes defined by power_phase_type."
+        },
+        "32": {
+          "name": "avg_left_power_phase",
+          "type": "uint8",
+          "scale": "0.7111111",
+          "units": "degrees",
+          "array": "[N]",
+          "comment": "Average left power phase peak angles. Data value indexes defined by power_phase_type."
+        },
+        "33": {
+          "name": "avg_left_power_phase_peak",
+          "type": "uint8",
+          "scale": "0.7111111",
+          "units": "degrees",
+          "array": "[N]",
+          "comment": "Average right power phase angles. Data value indexes defined by power_phase_type."
+        },
+        "34": {
+          "name": "avg_right_power_phase",
+          "type": "uint8",
+          "scale": "0.7111111",
+          "units": "degrees",
+          "array": "[N]",
+          "comment": "Average right power phase peak angles. Data value indexes defined by power_phase_type."
+        },
+        "35": {
+          "name": "avg_right_power_phase_peak",
+          "type": "uint8",
+          "scale": "0.7111111",
+          "units": "degrees",
+          "array": "[N]",
+          "comment": "Average power by position. Data value indexes defined by rider_position_type."
+        },
+        "36": {
+          "name": "avg_power_position",
+          "type": "uint16",
+          "units": "watts",
+          "array": "[N]",
+          "comment": "Maximum power by position. Data value indexes defined by rider_position_type."
+        },
+        "37": {
+          "name": "max_power_position",
+          "type": "uint16",
+          "units": "watts",
+          "array": "[N]"
+        },
+        "38": {
+          "name": "avg_left_torque_effectiveness",
+          "type": "uint8",
+          "scale": "2",
+          "units": "percent"
+        },
+        "39": {
+          "name": "avg_right_torque_effectiveness",
+          "type": "uint8",
+          "scale": "2",
+          "units": "percent"
+        },
+        "40": {
+          "name": "avg_left_pedal_smoothness",
+          "type": "uint8",
+          "scale": "2",
+          "units": "percent"
+        },
+        "41": {
+          "name": "avg_right_pedal_smoothness",
+          "type": "uint8",
+          "scale": "2",
+          "units": "percent"
+        },
+        "42": {
+          "name": "avg_combined_pedal_smoothness",
+          "type": "uint8",
+          "scale": "2",
+          "units": "percent",
+          "comment": "The flow score estimates how long distance wise a cyclist deaccelerates over intervals where deacceleration is unnecessary such as smooth turns or small grade angle intervals."
+        },
+        "43": {
+          "name": "avg_flow",
+          "type": "float32",
+          "units": "Flow",
+          "comment": "The grit score estimates how challenging a route could be for a cyclist in terms of time spent going over sharp turns or large grade slopes."
+        },
+        "44": {
+          "name": "total_grit",
+          "type": "float32",
+          "units": "kGrit"
+        },
+        "47": {
+          "name": "swim_stroke",
+          "type": "swim_stroke",
+          "comment": "# of active lengths of swim pool"
+        },
+        "48": {
+          "name": "num_active_lengths",
+          "type": "uint16",
+          "units": "lengths"
+        },
+        "49": {
+          "name": "avg_swolf",
+          "type": "uint16"
+        },
+        "50": {
+          "name": "avg_stroke_distance",
+          "type": "uint16",
+          "scale": "100",
+          "units": "m"
+        },
+        "51": {
+          "name": "avg_strokes_per_length",
+          "type": "uint16",
+          "scale": "10",
+          "units": "strokes / length"
+        },
         "52": {
-          "name": "avg_split_ascent",
+          "name": "avg_ascent",
           "type": "uint16",
           "units": "m"
         },
         "53": {
-          "name": "max_split_ascent",
+          "name": "max_ascent",
           "type": "uint16",
           "units": "m"
         },
-        "60": {
-          "name": "max_split_distance",
+        "54": {
+          "name": "climb_grading_scale",
+          "type": "climb_grading_scale"
+        },
+        "55": {
+          "name": "climb_max_grade_value",
           "type": "uint32",
-          "scale": 100.0,
-          "units": "m"
+          "subfields": [
+            {
+              "name": "climb_max_grade_yds",
+              "type": "yds_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "yds"
+            },
+            {
+              "name": "climb_max_grade_uiaa",
+              "type": "uiaa_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "uiaa"
+            },
+            {
+              "name": "climb_max_grade_french",
+              "type": "french_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "french"
+            },
+            {
+              "name": "climb_max_grade_british_adjectival",
+              "type": "british_adjectival_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "british_adjectival"
+            },
+            {
+              "name": "climb_max_grade_british_technical",
+              "type": "british_technical_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "british_technical"
+            },
+            {
+              "name": "climb_max_grade_ewbank",
+              "type": "ewbank_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "ewbank"
+            },
+            {
+              "name": "climb_max_grade_brazilian",
+              "type": "brazilian_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "brazilian"
+            },
+            {
+              "name": "climb_max_grade_saxon",
+              "type": "saxon_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "saxon"
+            },
+            {
+              "name": "climb_max_grade_vermin",
+              "type": "vermin_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "vermin"
+            },
+            {
+              "name": "climb_max_grade_font",
+              "type": "font_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "font"
+            },
+            {
+              "name": "climb_max_grade_dankyu",
+              "type": "dankyu_grading_scale",
+              "ref_field_name": "climb_grading_scale",
+              "ref_field_value": "dankyu"
+            }
+          ]
+        },
+        "56": {
+          "name": "num_falls",
+          "type": "uint16"
+        },
+        "58": {
+          "name": "num_climbs_attempted",
+          "type": "uint16"
+        },
+        "59": {
+          "name": "num_climbs_completed",
+          "type": "uint16"
+        },
+        "60": {
+          "name": "max_distance",
+          "type": "uint32",
+          "scale": "100",
+          "units": "m",
+          "comment": "Distance of the longest split"
         },
         "64": {
-          "name": "resting_calories",
+          "name": "metabolic_calories",
           "type": "uint16",
           "units": "kcal"
         },
+        "65": {
+          "name": "active_time",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "s",
+          "comment": "total active time in all split rounds"
+        },
+        "66": {
+          "name": "total_fractional_ascent",
+          "type": "uint8",
+          "scale": "100",
+          "units": "m",
+          "comment": "fractional part of total_ascent"
+        },
+        "67": {
+          "name": "total_fractional_descent",
+          "type": "uint8",
+          "scale": "100",
+          "units": "m",
+          "comment": "fractional part of total_descent"
+        },
+        "68": {
+          "name": "avg_fractional_ascent",
+          "type": "uint8",
+          "scale": "100",
+          "units": "m",
+          "comment": "fractional part of avg_ascent"
+        },
+        "69": {
+          "name": "max_fractional_ascent",
+          "type": "uint8",
+          "scale": "100",
+          "units": "m",
+          "comment": "fractional part of max_descent"
+        },
+        "71": {
+          "name": "avg_grade_adjusted_speed",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "m/s"
+        },
         "72": {
-          "name": "avg_hrv",
+          "name": "avg_stress",
+          "type": "uint16"
+        },
+        "77": {
+          "name": "total_moving_time",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "s"
+        },
+        "79": {
+          "name": "start_time",
+          "type": "date_time"
+        },
+        "87": {
+          "name": "min_heart_rate",
+          "type": "uint8",
+          "units": "bpm"
+        },
+        "91": {
+          "name": "avg_stance_time_percent",
           "type": "uint16",
-          "comment": "RMSSD"
+          "scale": "100",
+          "units": "percent"
+        },
+        "101": {
+          "name": "max_total_timer_time",
+          "type": "uint32",
+          "scale": "1000",
+          "units": "s"
         },
         "73": {
           "name": "max_hrv",
           "type": "uint16",
           "comment": "RMSSD"
-        },
-        "79": {
-          "name": "first_start_time",
-          "type": "date_time",
-          "units": "s"
         },
         "83": {
           "name": "step_speed_loss_distance",
@@ -24950,6 +27432,11 @@
           "type": "float32",
           "units": "Flow",
           "comment": "The flow score estimates how long distance wise a cyclist deaccelerates over intervals where deacceleration is unnecessary such as smooth turns or small grade angle intervals."
+        },
+        "88": {
+          "name": "metabolic_calories",
+          "type": "uint16",
+          "units": "kcal"
         },
         "89": {
           "name": "total_fractional_ascent",
@@ -28078,32 +30565,6 @@
         },
         "39": {
           "name": "wake_up_time",
-          "type": "date_time",
-          "units": "s"
-        }
-      }
-    },
-    "104": {
-      "name": "device_status",
-      "fields": {
-        "0": {
-          "name": "battery_voltage",
-          "type": "uint16",
-          "scale": 1000.0,
-          "units": "V"
-        },
-        "2": {
-          "name": "battery_level",
-          "type": "uint8",
-          "units": "percent"
-        },
-        "3": {
-          "name": "temperature",
-          "type": "sint8",
-          "units": "\u00b0C"
-        },
-        "253": {
-          "name": "timestamp",
           "type": "date_time",
           "units": "s"
         }
