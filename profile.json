@@ -5644,6 +5644,12 @@
         "4825": {
           "name": "approach_j1"
         },
+        "4874": {
+          "name": "approach_s72_43mm"
+        },
+        "4875": {
+          "name": "approach_s72_47mm"
+        },
         "4879": {
           "name": "d2_mach2"
         },
@@ -5683,6 +5689,9 @@
         },
         "5056": {
           "name": "d2_mach2_pro"
+        },
+        "5169": {
+          "name": "enduro4"
         },
         "10007": {
           "name": "sdm4",
