@@ -74,6 +74,14 @@
           "name": "exd_configuration",
           "comment": "Read/write/erase. Single File. Directory=Settings"
         },
+        "66": {
+          "name": "tsb_sonar_events",
+          "comment": "Read/write/erase, multiple files. Directory=Events. Top-Side-Bouy (TSB)."
+        },
+        "67": {
+          "name": "tsb_diver_config",
+          "comment": "Read/write/erase, single file. Top-Side-Bouy (TSB)."
+        },
         "247": {
           "name": "mfg_range_min",
           "comment": "0xF7 - 0xFE reserved for manufacturer specific file types"
@@ -477,6 +485,18 @@
         },
         "346": {
           "name": "sleep_assessment"
+        },
+        "364": {
+          "name": "tsb_sonar_message_event",
+          "comment": "Message type for individual sonar event"
+        },
+        "365": {
+          "name": "tsb_settings",
+          "comment": "Message type for storing Top-Side-Bouy (TSB) Settings"
+        },
+        "366": {
+          "name": "tsb_diver_config",
+          "comment": "Message type for storing saved Top-Side-Bouy (TSB) Diver Configuration"
         },
         "370": {
           "name": "hrv_status_summary"
@@ -4197,6 +4217,18 @@
         "354": {
           "name": "forto_cycling"
         },
+        "356": {
+          "name": "fair_weather_athletics"
+        },
+        "357": {
+          "name": "hatch_factory"
+        },
+        "358": {
+          "name": "torqano"
+        },
+        "359": {
+          "name": "rockbros"
+        },
         "5759": {
           "name": "actigraphcorp"
         }
@@ -5678,14 +5710,29 @@
           "name": "fenix9",
           "comment": "47mm & 57mm"
         },
+        "4962": {
+          "name": "edge_1060"
+        },
         "4678": {
           "name": "instinct_crossover_amoled"
+        },
+        "4970": {
+          "name": "edge_explore3"
+        },
+        "4972": {
+          "name": "edge_explore3_plus"
         },
         "4944": {
           "name": "d2_air_x15"
         },
+        "5000": {
+          "name": "marq3"
+        },
         "5019": {
           "name": "cirqa_smart_band"
+        },
+        "5026": {
+          "name": "descent_x10"
         },
         "5056": {
           "name": "d2_mach2_pro"
@@ -16266,6 +16313,163 @@
         },
         "2": {
           "name": "manual_gc"
+        }
+      }
+    },
+    "sonar_packet_id": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "xx_ant_id"
+        },
+        "1": {
+          "name": "t1_pressure_depth",
+          "comment": "T1 tank pod messages [1-7]"
+        },
+        "2": {
+          "name": "t1_msg_rly_from_tsb"
+        },
+        "3": {
+          "name": "rsvd_3"
+        },
+        "4": {
+          "name": "t1_info_resp"
+        },
+        "5": {
+          "name": "t1_nav_rly_from_tsb"
+        },
+        "6": {
+          "name": "rsvd_6"
+        },
+        "7": {
+          "name": "rsvd_7"
+        },
+        "8": {
+          "name": "rsvd_8",
+          "comment": "T1 tank pod messages when watch Tx is available and for future expansion [8-15]"
+        },
+        "9": {
+          "name": "rsvd_9"
+        },
+        "10": {
+          "name": "t1_pressure_heart_resp_rate"
+        },
+        "11": {
+          "name": "rsvd_11"
+        },
+        "12": {
+          "name": "t1_ack_relay"
+        },
+        "13": {
+          "name": "rsvd_13"
+        },
+        "14": {
+          "name": "rsvd_14"
+        },
+        "15": {
+          "name": "rsvd_15"
+        },
+        "16": {
+          "name": "tsb_emer_alert",
+          "comment": "Top Side Box Messages [16-25]"
+        },
+        "17": {
+          "name": "tsb_canned_msg"
+        },
+        "18": {
+          "name": "tsb_info_req"
+        },
+        "19": {
+          "name": "tsb_nav"
+        },
+        "21": {
+          "name": "rsvd_21"
+        },
+        "22": {
+          "name": "tsb_ack"
+        },
+        "23": {
+          "name": "rsvd_23"
+        },
+        "24": {
+          "name": "rsvd_24"
+        },
+        "25": {
+          "name": "rsvd_25"
+        },
+        "26": {
+          "name": "wch_emer_alert",
+          "comment": "Watch message [26-31]"
+        },
+        "27": {
+          "name": "wch_canned_msg"
+        },
+        "28": {
+          "name": "wch_heart_resp_rate"
+        },
+        "29": {
+          "name": "wch_ack"
+        },
+        "30": {
+          "name": "rsvd_30"
+        },
+        "31": {
+          "name": "rsvd_31"
+        },
+        "32": {
+          "name": "gen_debug",
+          "comment": "Used for logging general debug messages"
+        }
+      }
+    },
+    "sonar_heading": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "north"
+        },
+        "1": {
+          "name": "north_east"
+        },
+        "2": {
+          "name": "east"
+        },
+        "3": {
+          "name": "south_east"
+        },
+        "4": {
+          "name": "south"
+        },
+        "5": {
+          "name": "south_west"
+        },
+        "6": {
+          "name": "west"
+        },
+        "7": {
+          "name": "north_west"
+        }
+      }
+    },
+    "sonar_message_type": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "emergency_message"
+        },
+        "1": {
+          "name": "canned_message"
+        }
+      }
+    },
+    "sonar_message_source": {
+      "base_type": "enum",
+      "values": {
+        "0": {
+          "name": "dive_app"
+        },
+        "1": {
+          "name": "watch"
         }
       }
     },
@@ -30117,6 +30321,146 @@
           "name": "update_timestamp",
           "type": "date_time",
           "comment": "The timestamp representing when this nap event was last updated"
+        }
+      }
+    },
+    "364": {
+      "name": "tsb_sonar_message_event",
+      "fields": {
+        "0": {
+          "name": "sonar_packet_id",
+          "type": "sonar_packet_id"
+        },
+        "21": {
+          "name": "diver_location_accuracy",
+          "type": "uint16",
+          "scale": "1",
+          "units": "degrees",
+          "comment": "Standard Deviation of Diver's Location"
+        },
+        "22": {
+          "name": "message_type",
+          "type": "sonar_message_type"
+        },
+        "23": {
+          "name": "message_source",
+          "type": "sonar_message_source"
+        }
+      }
+    },
+    "365": {
+      "name": "tsb_settings",
+      "fields": {
+        "0": {
+          "name": "tx_enable",
+          "type": "bool"
+        },
+        "1": {
+          "name": "proportional_gain",
+          "type": "float32",
+          "units": "dB"
+        },
+        "2": {
+          "name": "integral_gain",
+          "type": "float32",
+          "units": "dB"
+        },
+        "3": {
+          "name": "fixed_gain",
+          "type": "uint8",
+          "units": "dB"
+        },
+        "4": {
+          "name": "rssi_setpoint",
+          "type": "uint32"
+        },
+        "5": {
+          "name": "plt_thresh_mult",
+          "type": "float32"
+        },
+        "6": {
+          "name": "plt_thresh",
+          "type": "uint32"
+        },
+        "7": {
+          "name": "transducer_spacing",
+          "type": "float32",
+          "units": "m"
+        },
+        "8": {
+          "name": "calib_accel",
+          "type": "float32",
+          "array": "[3]"
+        },
+        "9": {
+          "name": "calib_gyro",
+          "type": "float32",
+          "array": "[3]"
+        },
+        "10": {
+          "name": "calib_mag",
+          "type": "float32",
+          "array": "[3]"
+        },
+        "11": {
+          "name": "calib_mag_soft_x",
+          "type": "float32",
+          "array": "[3]"
+        },
+        "12": {
+          "name": "calib_mag_soft_y",
+          "type": "float32",
+          "array": "[3]"
+        },
+        "13": {
+          "name": "calib_mag_soft_z",
+          "type": "float32",
+          "array": "[3]"
+        },
+        "14": {
+          "name": "max_tx_duty_cycle",
+          "type": "uint8"
+        },
+        "15": {
+          "name": "tx_chan",
+          "type": "uint8"
+        },
+        "16": {
+          "name": "search_gain",
+          "type": "uint8",
+          "units": "dB"
+        }
+      }
+    },
+    "366": {
+      "name": "tsb_diver_config",
+      "fields": {
+        "0": {
+          "name": "ant_id",
+          "type": "uint32z"
+        },
+        "1": {
+          "name": "diver_name",
+          "type": "string",
+          "array": "[N]"
+        },
+        "2": {
+          "name": "t1_tankpod_sw_ver",
+          "type": "uint16",
+          "scale": "100"
+        },
+        "3": {
+          "name": "location_enabled",
+          "type": "bool"
+        },
+        "4": {
+          "name": "messaging_enabled",
+          "type": "bool"
+        },
+        "5": {
+          "name": "t1_owner_ant_id",
+          "type": "uint32z",
+          "comment": "ANT ID of the watch that claimed ownership of the diver's T1 (usually the diver's watch)"
         }
       }
     },
